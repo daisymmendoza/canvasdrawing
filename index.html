@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Drawing</title>
+<script>
+    window.onload = function() {
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        context.lineWidth = 7;
+        context.strokeStyle = "black";
+
+        // Colored rectangle 1
+        context.beginPath();
+        context.fillStyle = "#946b45";
+        context.fillRect(290, 440, 70, 115);
+        context.closePath();
+
+        // Colored rectangle 2
+        context.beginPath();
+        context.fillStyle = "#946b45";
+        context.fillRect(330, 400, 70, 150);
+        context.closePath();
+
+        // Colored rectangle 3
+        context.beginPath();
+        context.fillStyle = "#946b45";
+        context.fillRect(355, 320, 48, 80);
+        context.closePath();
+
+        // Colored rectangle 4
+        context.beginPath();
+        context.fillStyle = "#946b45";
+        context.fillRect(430, 513, 48, 37);
+        context.closePath();
+
+        // Colored rectangle 5
+        context.beginPath();
+        context.fillStyle = "#946b45";
+        context.fillRect(400, 445, 20, 37);
+        context.closePath();
+
+        // Colored rectangle 6
+        context.beginPath();
+        context.fillStyle = "#946b45";
+        context.fillRect(405, 455, 20, 43);
+        context.closePath();
+
+        // Colored rectangle 7
+        context.beginPath();
+        context.fillStyle = "#946b45";
+        context.fillRect(414, 461, 20, 49);
+        context.closePath();
+
+        // Colored rectangle 8
+        context.beginPath();
+        context.fillStyle = "#946b45";
+        context.fillRect(424, 473, 20, 49);
+        context.closePath();
+
+        // Colored rectangle 9
+        context.beginPath();
+        context.fillStyle = "#946b45";
+        context.fillRect(444, 485, 10, 30);
+        context.closePath();
+
+        // Colored rectangle 10
+        context.beginPath();
+        context.fillStyle = "#946b45";
+        context.fillRect(454, 497, 10, 30);
+        context.closePath();
+
+        // Colored rectangle 11
+        context.beginPath();
+        context.fillStyle = "#946b45";
+        context.fillRect(464, 509, 11, 30);
+        context.closePath();
+
+        // Colored rectangle 12
+        context.beginPath();
+        context.fillStyle = "#946b45";
+        context.fillRect(474, 517, 10, 20);
+        context.closePath();
+
+        // Colored rectangle 13
+        context.beginPath();
+        context.fillStyle = "#946b45";
+        context.fillRect(397, 540, 10, 10);
+        context.closePath();
+
+        // Left ear arc
+        context.beginPath();
+        context.moveTo(353, 285);
+        context.quadraticCurveTo(330, 150, 390, 250);
+        context.fillStyle = "#946b45";
+        context.fill();
+        context.stroke();
+        
+        // Right ear arc
+        context.beginPath();
+        context.moveTo(400, 250);
+        context.quadraticCurveTo(423, 150, 443, 275);
+        context.fillStyle = "#946b45";
+        context.fill();
+        context.stroke();
+
+        // Head arc
+        context.beginPath();
+        context.arc(400, 300, 50, Math.PI, 2 * Math.PI, false);
+        context.fillStyle = "#946b45";
+        context.fill();
+        context.stroke();
+
+        // Snout curve
+        context.beginPath();
+        context.moveTo(349, 298);
+        context.quadraticCurveTo(450, 430, 450, 298);
+        context.fillStyle = "#946b45";
+        context.fill();
+        context.stroke();
+
+        // Body curve in
+        context.beginPath();
+        context.moveTo(335, 370);
+        context.quadraticCurveTo(350, 350, 360, 315);
+        context.fillStyle = "#946b45";
+        context.fill();
+        context.stroke();
+
+        // Body curve into leg
+        context.beginPath();
+        context.moveTo(335, 370);
+        context.quadraticCurveTo(230, 520, 290, 550);
+        context.fillStyle = "#946b45";
+        context.fill();
+        context.stroke();
+
+        // Tail curve bottom
+        context.beginPath();
+        context.moveTo(180, 460);
+        context.quadraticCurveTo(200, 550, 290, 550);
+        context.fillStyle = "#946b45";
+        context.fill();
+        context.closePath();
+        context.stroke();
+
+        // Back Foot curve bottom
+        context.beginPath();
+        context.moveTo(390, 510);
+        context.quadraticCurveTo(435, 520, 410, 540);
+        context.fillStyle = "#946b45";
+        context.fill();   
+        context.stroke();
+
+        // Foot curve bottom
+        context.beginPath();
+        context.moveTo(290, 550);
+        context.quadraticCurveTo(340, 560, 410, 550);
+        context.fillStyle = "#946b45";
+        context.fill();
+        context.stroke();
+
+        // Toes curve
+        context.beginPath();
+        context.moveTo(410, 553);
+        context.quadraticCurveTo(410, 520, 380, 520);
+        context.fillStyle = "#946b45";
+        context.fill();
+        context.stroke();
+
+        // Foot curve top
+        context.beginPath();
+        context.moveTo(380, 520);
+        context.lineTo(352, 520);
+        context.fillStyle = "#946b45";
+        context.fill();
+        context.stroke();
+
+        // Back leg curve
+        context.beginPath();
+        context.moveTo(310, 480);
+        context.quadraticCurveTo(350, 460, 355, 520);
+        context.fillStyle = "#946b45";
+        context.fill();
+        context.stroke();
+
+        // Chest curve in
+        context.beginPath();
+        context.moveTo(420, 365);
+        context.quadraticCurveTo(410, 350, 400, 400);
+        context.fillStyle = "#946b45";
+        context.stroke();
+
+        // Chest curve out
+        context.beginPath();
+        context.moveTo(400, 398);
+        context.quadraticCurveTo(425, 450, 390, 520);
+        context.fillStyle = "#946b45";
+        context.fill();
+        context.stroke();
+
+        // Front leg curve bottom
+        context.beginPath();
+        context.moveTo(380, 470);
+        context.quadraticCurveTo(410, 500, 430, 520);
+        context.fillStyle = "#946b45";
+        // context.fill();
+        context.stroke();
+
+        // Front leg curve top
+        context.beginPath();
+        context.moveTo(390, 430);
+        context.quadraticCurveTo(410, 470, 460, 520);
+        context.fillStyle = "#946b45";
+        context.fill();
+        context.stroke();
+
+        // Front foot curve
+        context.beginPath();
+        context.moveTo(430, 517);
+        context.quadraticCurveTo(420, 550, 440, 550);
+        context.fillStyle = "#946b45";
+        context.fill();
+        context.stroke();
+
+        // Front foot curve bottom
+        context.beginPath();
+        context.moveTo(440, 550);
+        context.quadraticCurveTo(470, 555, 480, 550);
+        context.stroke();
+
+        // Front foot curve right
+        context.beginPath();
+        context.moveTo(480, 550);
+        context.quadraticCurveTo(490, 540, 458, 518);
+        context.fillStyle = "#946b45";
+        context.fill();
+        context.stroke();
+
+        // 2nd Front leg curve top
+        context.beginPath();
+        context.moveTo(410, 430);
+        context.quadraticCurveTo(410, 440, 470, 510);
+        context.stroke();
+
+        // 2nd Front foot curve right
+        context.beginPath();
+        context.moveTo(469, 509);
+        context.quadraticCurveTo(500, 530, 480, 540);
+        context.stroke();
+
+        // Colored rectangle 14
+        context.beginPath();
+        context.rotate(-60 * Math.PI / 180);
+        context.fillRect(-242, 478, 133, 50);
+        context.closePath();
+
+        // Colored rectangle 15
+        context.beginPath();
+        context.fillRect(-242, 506, 133, 30);
+        context.closePath();
+
+        // Colored rectangle 16
+        context.beginPath();
+        context.rotate(103 * Math.PI / 180);
+        context.fillRect(617, 66, 21, 16);
+        context.closePath();
+
+        // Colored rectangle 17
+        context.beginPath();
+        context.rotate(7 * Math.PI / 180);
+        context.fillRect(609, -13, 21, 16);
+        context.closePath();
+    };
+</script>
+</head>
+<body>
+    <canvas id="myCanvas" width="600" height="700" style="border: 1px solid black;"></canvas>
+</body>
+</html>
